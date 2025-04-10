@@ -1,12 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <h1>Prueba</h1>
+    <title>Simulador de Pedidos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 10px;
+            margin-bottom: 5px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .completado {
+            background-color: #c8e6c9;
+        }
+
+        .en-proceso {
+            background-color: #fff9c4;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>☕ Cafetería: Simulador de Pedidos</h1>
+    <button id="addOrderBtn">Agregar Pedido</button>
+    <ul id="orderList"></ul>
+
+    <script src="app.js"></script>
 </body>
 </html>
